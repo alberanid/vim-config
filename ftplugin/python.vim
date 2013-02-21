@@ -11,6 +11,11 @@ if exists("b:loaded_py_match") || &cp
 endif
 let b:loaded_py_match = 1
 
+" da+
+set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+
+
 let s:save_cpo = &cpo
 set cpo&vim
 

@@ -7,3 +7,4 @@ elseif getline(1) =~ "^Path"
   so <sfile>:p:h/syntax/mail.vim
 endif
 
+
