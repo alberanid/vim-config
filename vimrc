@@ -117,6 +117,10 @@ let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 " Tagbar
 let g:tagbar_left=1
 
+" Ctrlp
+let g:ctrlp_max_depth = 3
+let g:ctrlp_max_files = 1000
+
 " Powerline
 "let g:Powerline_cache_enabled = 0
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
