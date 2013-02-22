@@ -96,6 +96,7 @@ nnoremap <F4> :execute 'NERDTreeToggle ' . getcwd()<CR>
 let g:pep8_map='<F5>'
 map <F6> :set fileformat=unix<CR>
 map <F7> :set fileformat=dos<CR>
+map <F8> :TagbarToggle<CR>
 set pastetoggle=<F9>
 nnoremap <F10> :GundoToggle<CR>
 " Make p in Visual mode replace the selected text with the " register
@@ -112,6 +113,9 @@ let ropevim_vim_completion=1
 
 " Ack
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
+" Tagbar
+let g:tagbar_left=1
 
 " Powerline
 "let g:Powerline_cache_enabled = 0
