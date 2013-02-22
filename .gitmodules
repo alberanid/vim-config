@@ -68,3 +68,6 @@
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
 
+[submodule "bundle/pathogen"]
+	path = bundle/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
