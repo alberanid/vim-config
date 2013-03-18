@@ -11,6 +11,7 @@ Powerline:
     mkdir -p ~/.fonts/
     cp ~/.vimrc/powerline-fonts/* ~/.fonts/
     fc-cache -fv
+    pip install -U --user git+git://git@github.com/Lokaltog/powerline
 
 Upgrade all bundled plugins
     
