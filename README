@@ -1,0 +1,22 @@
+Installation:
+
+    git clone git://github.com/alberanid/vim-config.git ~/.vim
+    ln -s ~/.vim/vimrc ~/.vimrc
+    cd ~/.vim
+    git submodule init    # These commands must be run also
+    git submodule update  # when a new plugin is added.
+
+Powerline:
+
+    mkdir -p ~/.fonts/
+    cp ~/.vimrc/powerline-fonts/* ~/.fonts/
+    fc-cache -fv
+
+Upgrade all bundled plugins
+    
+    git submodule foreach git pull origin master
+
+Add a new plugin
+   
+    git submodule add git://example.com/git/plugin-name.git bundle/plugin-name
+
