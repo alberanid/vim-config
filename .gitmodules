@@ -73,3 +73,6 @@
 [submodule "bundle/vim-snipmate"]
 	path = bundle/vim-snipmate
 	url = git@github.com:garbas/vim-snipmate.git
+[submodule "bundle/covim"]
+	path = bundle/covim
+	url = git://github.com/FredKSchott/CoVim.git
