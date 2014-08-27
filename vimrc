@@ -121,10 +121,10 @@ let g:tagbar_left=1
 let g:ctrlp_max_depth = 3
 let g:ctrlp_max_files = 1000
 
-" Powerline
-"let g:Powerline_cache_enabled = 0
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-let g:Powerline_symbols="fancy"
+" Airline
+" Be sure to have your TERM environment variable set to xterm-256color
+let g:airline_powerline_fonts = 1
+
 
 " Terminals and color schemes
 if &term =~ "xterm-debian" || &term =~ "xterm-color" || &term =~ "xterm-xfree86"
