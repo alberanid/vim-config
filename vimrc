@@ -112,7 +112,6 @@ let g:miniBufExplModSelTarget=1
 let ropevim_vim_completion=1
 
 " UltiSnips
-let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
