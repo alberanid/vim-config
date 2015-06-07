@@ -111,6 +111,11 @@ let g:miniBufExplModSelTarget=1
 " Rope
 let ropevim_vim_completion=1
 
+" UltiSnips
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 " Ack
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
