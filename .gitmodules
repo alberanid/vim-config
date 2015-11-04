@@ -73,3 +73,6 @@
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = git@github.com:honza/vim-snippets.git
+[submodule "bundle/python-rope"]
+	path = bundle/python-rope
+	url = git@github.com:python-rope/ropevim.git
