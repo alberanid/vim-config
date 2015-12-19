@@ -108,9 +108,6 @@ let g:miniBufExplMapWindowNavArrows=1
 let g:miniBufExplMapCTabSwitchBufs=0
 let g:miniBufExplModSelTarget=1 
 
-" Rope
-let ropevim_vim_completion=1
-
 " UltiSnips
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
