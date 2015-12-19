@@ -25,6 +25,7 @@ set helpfile=$VIMRUNTIME/doc/help.txt
 let myfiletypefile = "~/.vim/filetypes.vim"
 
 " Activate pathogen
+filetype off
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()

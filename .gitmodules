@@ -76,3 +76,6 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode.git
+[submodule "bundle/python-rope"]
+	path = bundle/python-rope
+	url = https://github.com/python-rope/rope.git
