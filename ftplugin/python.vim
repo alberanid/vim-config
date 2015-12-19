@@ -5,6 +5,14 @@
 " Version:	0.5, for Vim 6.1
 " URL:		http://www.vim.org/scripts/script.php?script_id=386 
 
+setlocal complete+=t
+setlocal formatoptions-=t
+setlocal nowrap
+setlocal textwidth=79
+setlocal commentstring=#%s
+setlocal colorcolumn=+1
+setlocal define=^\s*\\(def\\\\|class\\)
+
 " allow user to prevent loading and prevent duplicate loading
 if exists("b:loaded_py_match") || &cp
   finish
