@@ -73,3 +73,6 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode.git
+[submodule "bundle/yankring"]
+	path = bundle/yankring
+	url = https://github.com/vim-scripts/YankRing.vim.git
