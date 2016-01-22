@@ -115,7 +115,12 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Python-mode
 let g:pymode_options = 0
+let g:pymode_rope = 0
+"let g:pymode_rope_guess_project = 0
 let g:pymode_rope_lookup_project = 0
+let g:pymode_rope_completion = 1
+let g:pymode_rope_complete_on_dot = 1
+let g:pymode_rope_autoimport = 0
 
 " Ack
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
