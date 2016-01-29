@@ -103,11 +103,6 @@ nnoremap <F10> :GundoToggle<CR>
 " Make p in Visual mode replace the selected text with the " register
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 
-" Minibufexpl
-let g:miniBufExplMapWindowNavVim=1
-let g:miniBufExplMapWindowNavArrows=1
-let g:miniBufExplMapCTabSwitchBufs=0
-let g:miniBufExplModSelTarget=1 
 
 " UltiSnips
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -123,19 +118,13 @@ let g:pymode_rope_complete_on_dot = 1
 let g:pymode_rope_autoimport = 0
 let g:pymode_options_max_line_length = 120
 
-" Ack
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
-
 " Tagbar
 let g:tagbar_left=1
-
-" Ctrlp
-let g:ctrlp_max_depth = 3
-let g:ctrlp_max_files = 1000
 
 " Airline
 " Be sure to have your TERM environment variable set to xterm-256color
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 
 " Terminals and color schemes
