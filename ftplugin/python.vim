@@ -6,4 +6,5 @@ setlocal nowrap
 setlocal textwidth=120
 setlocal commentstring=#%s
 setlocal colorcolumn=+1
+setlocal define=^\s*\\(def\\\\|class\\)
 

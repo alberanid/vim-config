@@ -116,7 +116,11 @@ let g:pymode_rope_lookup_project = 0
 let g:pymode_rope_completion = 1
 let g:pymode_rope_complete_on_dot = 1
 let g:pymode_rope_autoimport = 0
+let g:pymode_lint_sort = ['E', 'C', 'I']
 let g:pymode_options_max_line_length = 120
+
+" jedi-vim
+autocmd FileType python setlocal completeopt-=preview
 
 " Tagbar
 let g:tagbar_left=1
@@ -125,6 +129,13 @@ let g:tagbar_left=1
 " Be sure to have your TERM environment variable set to xterm-256color
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tagbar#enabled = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#tabline#tab_nr_type = 2
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#buffer_nr_format = '%s:'
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let airline#extensions#tabline#ignore_bufadd_pat = '\c\vgundo|undotree|vimfiler|tagbar|nerd_tree'
 
 
 " Terminals and color schemes
