@@ -141,6 +141,7 @@ let airline#extensions#tabline#ignore_bufadd_pat = '\c\vgundo|undotree|vimfiler|
 " yankring
 let g:yankring_max_history = 1000
 let g:yankring_min_element_length = 2
+let g:yankring_history_dir = '$HOME/.vim,$HOME'
 
 " Terminals and color schemes
 if &term =~ "xterm-debian" || &term =~ "xterm-color" || &term =~ "xterm-xfree86"
