@@ -107,6 +107,7 @@ vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 " UltiSnips
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:ultisnips_python_style="sphinx"
 
 " Python-mode
 let g:pymode_options = 0
