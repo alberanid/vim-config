@@ -6,21 +6,24 @@ Installation:
     git submodule init    # These commands must be run also
     git submodule update  # when a new plugin is added.
 
-Powerline/airline fonts:
+Dependencies:
+    vim-jedi: python-jedi
+
+Powerline/Airline fonts:
 
     mkdir -p ~/.fonts/
     cp ~/.vim/powerline-fonts/* ~/.fonts/
     fc-cache -fv
 
-Upgrade all bundled plugins
+Upgrade all bundled plugins:
     
     git submodule foreach git pull origin master
 
-Add a new plugin
+Add a new plugin:
    
     git submodule add git://example.com/git/plugin-name.git bundle/plugin-name
 
-Author and license
+Author and licens:e
 
-Davide Alberani <da@erlug.linux.it> (C) 2013-2014
+Davide Alberani <da@erlug.linux.it> (C) 2013-2016
 Released under the terms of the CC BY-SA license: https://creativecommons.org/licenses/by-sa/3.0/
