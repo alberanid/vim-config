@@ -93,11 +93,11 @@ com -bang QA qa<bang>
 
 " Mappings
 map Q gq
+:nnoremap <silent> <F2> :YRShow<CR>
 nnoremap <F4> :execute 'NERDTreeToggle ' . getcwd()<CR>
-let g:pep8_map='<F5>'
-map <F6> :set fileformat=unix<CR>
-map <F7> :set fileformat=dos<CR>
-map <F8> :TagbarToggle<CR>
+nnoremap <F6> :set fileformat=unix<CR>
+nnoremap <F7> :set fileformat=dos<CR>
+nnoremap <F8> :TagbarToggle<CR>
 set pastetoggle=<F9>
 nnoremap <F10> :GundoToggle<CR>
 " Make p in Visual mode replace the selected text with the " register
@@ -138,6 +138,9 @@ let g:airline#extensions#tabline#buffer_nr_format = '%s:'
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let airline#extensions#tabline#ignore_bufadd_pat = '\c\vgundo|undotree|vimfiler|tagbar|nerd_tree'
 
+" yankring
+let g:yankring_max_history = 1000
+let g:yankring_min_element_length = 2
 
 " Terminals and color schemes
 if &term =~ "xterm-debian" || &term =~ "xterm-color" || &term =~ "xterm-xfree86"
