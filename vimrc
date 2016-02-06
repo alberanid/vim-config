@@ -143,6 +143,9 @@ let g:yankring_max_history = 1000
 let g:yankring_min_element_length = 2
 let g:yankring_history_dir = '$HOME/.vim,$HOME'
 
+" EasyGrep
+let g:EasyGrepCommand = 1
+
 " Terminals and color schemes
 if &term =~ "xterm-debian" || &term =~ "xterm-color" || &term =~ "xterm-xfree86"
   set t_Co=16
