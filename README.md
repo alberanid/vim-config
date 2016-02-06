@@ -60,7 +60,7 @@ Main commands and shortcuts
 * **F10** Gundo
 
 **Seach and simple refactoring (EasyGrep):**
-* **\\vV** grep the word under the cursor (**\\vV** to match the whole word)
+* **\\vv** grep the word under the cursor (**\\vV** to match the whole word)
 * **\\vR** grep the whole word and prompt for a replacement
 * **\\vyr** toggle recursive search and **\\vyi** case insensitive mode
 
