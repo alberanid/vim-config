@@ -12,10 +12,10 @@ Dependencies
 
 * **python-jedi** for Python autocompletition (vim-jedi)
 
-* **Powerline/Airline fonts**:
-    mkdir -p ~/.fonts/
-    cp ~/.vim/powerline-fonts/* ~/.fonts/
-    fc-cache -fv
+* **Powerline/Airline fonts**:  
+    mkdir -p ~/.fonts/  
+    cp ~/.vim/powerline-fonts/* ~/.fonts/  
+    fc-cache -fv  
 
 Also notice that you probably want to setup your terminal with the solarized palette: http://ethanschoonover.com/solarized
 
