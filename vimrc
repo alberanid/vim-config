@@ -125,6 +125,7 @@ autocmd FileType python setlocal completeopt-=preview
 
 " Tagbar
 let g:tagbar_left=1
+let g:tagbar_autoclose = 1
 
 " Airline
 " Be sure to have your TERM environment variable set to xterm-256color
