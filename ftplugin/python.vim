@@ -8,3 +8,5 @@ setlocal commentstring=#%s
 setlocal colorcolumn=+1
 setlocal define=^\s*\\(def\\\\|class\\)
 
+let b:delimitMate_nesting_quotes = ['"', "'"]
+
