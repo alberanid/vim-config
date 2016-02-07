@@ -51,6 +51,8 @@ Main commands and shortcuts
 * **ctrl+w** and movements to navigate splits
 * **bX** (where X is the buffer number in the topbar) to change buffer
 * **:bd** to close a buffer
+* register **"\*** to copy/paste to/from the primary selection (e.g. **"\*p**)
+* register **"+** to copy/paste to/from the system clipboard (e.g. **"+p**)
 
 **And some toggles:**
 * **F2** yank list (enter to put in place, or **p**aste commands to insert in a near line)
