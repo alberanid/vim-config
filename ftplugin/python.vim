@@ -1,4 +1,4 @@
-" Language:     Python (ft=python)
+" Language: Python (ft=python)
 
 setlocal complete+=t
 setlocal formatoptions-=t
