@@ -54,6 +54,7 @@ Main commands and shortcuts
 * **:bd** to close a buffer
 * register **"\*** to copy/paste to/from the primary selection (e.g. **"\*p**)
 * register **"+** to copy/paste to/from the system clipboard (e.g. **"+p**)
+* **ctrl+x ctrl+k** complete using dictionaries
 
 **And some toggles:**
 * **F2** yank list (enter to put in place, or **p**aste commands to insert in a near line)
