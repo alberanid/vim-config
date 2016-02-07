@@ -90,8 +90,8 @@ com -bang QA qa<bang>
 map Q gq
 :nnoremap <silent> <F2> :YRShow<CR>
 nnoremap <silent> <F4> :execute 'NERDTreeToggle ' . getcwd()<CR>
-nnoremap <silent> <F5>  :setlocal spell! spelllang=en_us<CR>
-inoremap <silent> <F5>  <C-\><C-O>:setlocal spell! spelllang=en_us<CR>
+nnoremap <silent> <F5> :setlocal spell!<CR>
+inoremap <silent> <F5> <C-\><C-O>:setlocal spell!<CR>
 nnoremap <silent> <F6> :set fileformat=unix<CR>
 nnoremap <silent> <F7> :set fileformat=dos<CR>
 nnoremap <F8> :TagbarToggle<CR>

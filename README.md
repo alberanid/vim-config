@@ -55,6 +55,7 @@ Main commands and shortcuts
 **And some toggles:**
 * **F2** yank list (enter to put in place, or **p**aste commands to insert in a near line)
 * **F4** NERDTree
+* **F5** spell checker
 * **F8** Tagbar
 * **F9** paste mode
 * **F10** Gundo
