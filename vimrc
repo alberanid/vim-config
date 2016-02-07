@@ -2,15 +2,11 @@
 "
 " Davide Alberani's vimrc
 "
-" email: da AT erlug.linux.it
-" home page: http://www.mimante.net/
-" old vim's pages: http://www.mimante.net/vim/
+" Davide Alberani <da@erlug.linux.it> (C) 2013-2016
+" Released under the terms of the CC BY-SA license:
+" https://creativecommons.org/licenses/by-sa/3.0/
 "
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"             for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"
+" Info and instructions: https://github.com/alberanid/vim-config
 
 " Main settings
 set nocompatible
@@ -21,7 +17,6 @@ set undolevels=1000
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 set dictionary=/usr/share/dict/italian,/usr/share/dict/american-english
 set directory=~/tmp,/tmp,.
-set helpfile=$VIMRUNTIME/doc/help.txt
 let myfiletypefile = "~/.vim/filetypes.vim"
 
 " Activate pathogen
@@ -94,12 +89,14 @@ com -bang QA qa<bang>
 " Mappings
 map Q gq
 :nnoremap <silent> <F2> :YRShow<CR>
-nnoremap <F4> :execute 'NERDTreeToggle ' . getcwd()<CR>
-nnoremap <F6> :set fileformat=unix<CR>
-nnoremap <F7> :set fileformat=dos<CR>
+nnoremap <silent> <F4> :execute 'NERDTreeToggle ' . getcwd()<CR>
+nnoremap <silent> <F5>  :setlocal spell! spelllang=en_us<CR>
+inoremap <silent> <F5>  <C-\><C-O>:setlocal spell! spelllang=en_us<CR>
+nnoremap <silent> <F6> :set fileformat=unix<CR>
+nnoremap <silent> <F7> :set fileformat=dos<CR>
 nnoremap <F8> :TagbarToggle<CR>
 set pastetoggle=<F9>
-nnoremap <F10> :GundoToggle<CR>
+nnoremap <silent> <F10> :GundoToggle<CR>
 " Make p in Visual mode replace the selected text with the " register
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 
