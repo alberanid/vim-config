@@ -49,6 +49,7 @@ Main commands and shortcuts
 * **:sp** for horizontal split
 * **:vsp** for vertical split
 * **ctrl+w** and movements to navigate splits
+* **ctrl+w** and **q** to close a split
 * **bX** (where X is the buffer number in the topbar) to change buffer
 * **:bd** to close a buffer
 * register **"\*** to copy/paste to/from the primary selection (e.g. **"\*p**)
