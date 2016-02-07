@@ -4,7 +4,7 @@
 "
 " Davide Alberani <da@erlug.linux.it> (C) 2013-2016
 " Released under the terms of the CC BY-SA license:
-" https://creativecommons.org/licenses/by-sa/3.0/
+" https://creativecommons.org/licenses/by-sa/4.0/
 "
 " Info and instructions: https://github.com/alberanid/vim-config
 
