@@ -14,7 +14,7 @@ set encoding=utf-8
 set viminfo=!,'100,\"1000,c
 set history=1000
 set undolevels=1000
-set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
+set suffixes=.bak,~,.swp,.o,.out,.pyc,.pyo
 set dictionary=/usr/share/dict/italian,/usr/share/dict/american-english
 set directory=~/tmp,/tmp,.
 let myfiletypefile = "~/.vim/filetypes.vim"
@@ -24,6 +24,10 @@ filetype off
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
+
+" Timeout
+set ttimeout
+set ttimeoutlen=200
 
 " Buffers
 set hidden
@@ -37,7 +41,7 @@ set nomodeline
 set tabstop=8
 set smarttab
 set copyindent
-set noautoindent
+set autoindent
 set backspace=indent,eol,start
 set joinspaces
 set textwidth=0
@@ -56,6 +60,7 @@ set icon
 set noshowmode
 set switchbuf=usetab,newtab
 set noerrorbells
+set wildmenu
 "set cursorline
 
 " Search
@@ -63,9 +68,12 @@ set incsearch
 set ignorecase
 set infercase
 set smartcase
-set nohlsearch
-"set showmatch
-"set matchtime=5
+set showmatch
+set hlsearch
+" Use <C-L> to clear the highlighting of :set hlsearch.
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+endif
 
 " Folding
 set foldmethod=syntax
@@ -92,8 +100,6 @@ map Q gq
 nnoremap <silent> <F4> :execute 'NERDTreeToggle ' . getcwd()<CR>
 nnoremap <silent> <F5> :setlocal spell!<CR>
 inoremap <silent> <F5> <C-\><C-O>:setlocal spell!<CR>
-nnoremap <silent> <F6> :set fileformat=unix<CR>
-nnoremap <silent> <F7> :set fileformat=dos<CR>
 nnoremap <F8> :TagbarToggle<CR>
 set pastetoggle=<F9>
 nnoremap <silent> <F10> :GundoToggle<CR>
