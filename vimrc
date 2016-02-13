@@ -151,7 +151,7 @@ let g:yankring_history_dir = '$HOME/.vim,$HOME'
 let g:EasyGrepCommand = 1
 
 " Terminals and color schemes
-if &term =~ "xterm-debian" || &term =~ "xterm-color" || &term =~ "xterm-xfree86"
+if &term =~ "xterm-debian" || &term =~ "xterm-color" || &term =~ "xterm-xfree86" || &term =~ "linux"
   set t_Co=16
   set t_Sf=^[[3%dm
   set t_Sb=^[[4%dm
