@@ -106,6 +106,9 @@ nnoremap <silent> <F10> :GundoToggle<CR>
 " Make p in Visual mode replace the selected text with the " register
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 
+" supertab
+let g:SuperTabLongestEnhanced = 1
+let g:SuperTabLongestHighlight = 1
 
 " UltiSnips
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -141,6 +144,9 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#buffer_nr_format = '%s:'
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let airline#extensions#tabline#ignore_bufadd_pat = '\c\vgundo|undotree|vimfiler|tagbar|nerd_tree'
+
+" delimitMate
+autocmd FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
 
 " yankring
 let g:yankring_max_history = 1000
