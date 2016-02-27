@@ -54,7 +54,7 @@ set laststatus=2
 set scrolloff=1
 set showcmd
 set ttyfast
-set mouse=hvr
+set mouse=a
 set title
 set icon
 set noshowmode
