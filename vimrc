@@ -108,7 +108,7 @@ vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 
 " supertab
 let g:SuperTabLongestEnhanced = 1
-let g:SuperTabLongestHighlight = 1
+"let g:SuperTabLongestHighlight = 1
 
 " UltiSnips
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
