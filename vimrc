@@ -17,7 +17,7 @@ set undolevels=1000
 set suffixes=.bak,~,.swp,.o,.out,.pyc,.pyo
 set dictionary=/usr/share/dict/italian,/usr/share/dict/american-english
 set directory=~/tmp,/tmp,.
-let myfiletypefile = "~/.vim/filetypes.vim"
+let myfiletypefile = "~/.VIM/FILETYPES.VIm"
 
 " Activate pathogen
 filetype off
@@ -54,7 +54,7 @@ set laststatus=2
 set scrolloff=1
 set showcmd
 set ttyfast
-set mouse=a
+set mouse=nvr
 set title
 set icon
 set noshowmode
