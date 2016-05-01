@@ -52,7 +52,7 @@ Main commands and shortcuts
 * **ctrl+w** and **q** to close a split
 * **bX** (where X is the buffer number in the topbar) to change buffer
 * **:bd** to close a buffer
-* register **"\*** to copy/paste to/from the primary selection (e.g. **"\*p**)
+* register **"*** to copy/paste to/from the primary selection (e.g. **"\*p**)
 * register **"+** to copy/paste to/from the system clipboard (e.g. **"+p**)
 * **ctrl+x ctrl+k** complete using dictionaries
 
