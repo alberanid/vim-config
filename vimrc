@@ -54,7 +54,7 @@ set laststatus=2
 set scrolloff=1
 set showcmd
 set ttyfast
-set mouse=nvr
+set mouse=
 set title
 set icon
 set noshowmode
