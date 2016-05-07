@@ -63,6 +63,7 @@ Main commands and shortcuts
 * **F8** Tagbar
 * **F9** paste mode
 * **F10** Gundo
+* **F12** mouse mode
 
 **Seach and simple refactoring (EasyGrep):**
 * **\\vv** grep the word under the cursor (**\\vV** to match the whole word)
