@@ -12,6 +12,8 @@ Dependencies
 
 * **python-jedi** for Python autocompletition (vim-jedi)
 
+* **exuberant-ctags** for the tagbar
+
 * **Powerline/Airline fonts**:  
     mkdir -p ~/.fonts/  
     cp ~/.vim/powerline-fonts/* ~/.fonts/  
