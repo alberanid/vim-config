@@ -64,7 +64,7 @@ Main commands and shortcuts
 * **F5** spell checker
 * **F8** Tagbar
 * **F9** paste mode
-* **F10** Gundo
+* **F10** Undotree
 * **F12** mouse mode
 
 **Seach and simple refactoring (EasyGrep):**
@@ -82,5 +82,5 @@ Main commands and shortcuts
 Author and license
 ==================
 
-    Davide Alberani <da@erlug.linux.it> (C) 2013-2016
+    Davide Alberani <da@erlug.linux.it> (C) 2013-2017
     Released under the terms of the CC BY-SA license: https://creativecommons.org/licenses/by-sa/4.0/
