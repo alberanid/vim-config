@@ -102,7 +102,7 @@ nnoremap <silent> <F5> :setlocal spell!<CR>
 inoremap <silent> <F5> <C-\><C-O>:setlocal spell!<CR>
 nnoremap <F8> :TagbarToggle<CR>
 set pastetoggle=<F9>
-nnoremap <silent> <F10> :GundoToggle<CR>
+nnoremap <silent> <F10> :UndotreeToggle<CR>
 " Make p in Visual mode replace the selected text with the " register
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 
@@ -144,6 +144,12 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#buffer_nr_format = '%s:'
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let airline#extensions#tabline#ignore_bufadd_pat = '\c\vgundo|undotree|vimfiler|tagbar|nerd_tree'
+
+" undotree
+if has("persistent_undo")
+  set undodir=~/vim/undodir/
+  set undofile
+endif
 
 " delimitMate
 autocmd FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
