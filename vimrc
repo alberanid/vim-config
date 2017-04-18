@@ -127,6 +127,18 @@ let g:pymode_rope_autoimport = 0
 let g:pymode_lint_sort = ['E', 'C', 'I']
 let g:pymode_options_max_line_length = 120
 
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_enable_highlighting = 0
+let g:syntastic_python_checkers = ['pyflakes']
+
 " jedi-vim
 autocmd FileType python setlocal completeopt-=preview
 
