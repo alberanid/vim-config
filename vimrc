@@ -116,6 +116,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:ultisnips_python_style="sphinx"
 
 " Python-mode
+let g:pymode_python = 'python3'
 let g:pymode_options = 0
 let g:pymode_rope = 0
 "let g:pymode_rope_guess_project = 0
