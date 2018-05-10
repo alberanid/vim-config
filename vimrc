@@ -151,7 +151,6 @@ let g:tagbar_autoclose = 1
 " Airline
 " Be sure to have your TERM environment variable set to xterm-256color
 let g:airline_powerline_fonts = 0
-" let g:airline_symbols_ascii = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline#extensions#branch#enabled = 1
