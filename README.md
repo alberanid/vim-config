@@ -14,11 +14,6 @@ Dependencies
 
 * **exuberant-ctags** for the tagbar
 
-* **Powerline/Airline fonts**:  
-    mkdir -p ~/.fonts/  
-    cp ~/.vim/powerline-fonts/* ~/.fonts/  
-    fc-cache -fv  
-
 Also notice that you probably want to setup your terminal with the solarized palette: http://ethanschoonover.com/solarized
 
 Plugin management
