@@ -52,7 +52,7 @@ Main commands and shortcuts
 * **ctrl+w** and **q** to close a split
 * **bX** (where X is the buffer number in the topbar) to change buffer
 * **:bd** to close a buffer
-* register **"*** to copy/paste to/from the primary selection (e.g. **"\*p**)
+* register **"*** to copy/paste to/from the primary selection (e.g. **"\*p** - to use this and **"+** you must have a version of Vim compiled with clipboard support: install vim-gtk or vim-gnome)
 * register **"+** to copy/paste to/from the system clipboard (e.g. **"+p**)
 * **ctrl+x ctrl+k** complete using dictionaries
 
