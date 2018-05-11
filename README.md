@@ -4,13 +4,12 @@ Installation
     git clone git://github.com/alberanid/vim-config.git ~/.vim
     ln -s ~/.vim/vimrc ~/.vimrc
     cd ~/.vim
-    git submodule init
-    git submodule update
+    git submodule update --init --recursive
+    cd bundle/YouCompleteMe
+    ./install.py --clang-completer --go-completer --js-completer --java-completer
 
 Dependencies
 ============
-
-* **python-jedi** for Python autocompletition (vim-jedi)
 
 * **exuberant-ctags** for the tagbar
 
@@ -28,8 +27,7 @@ Add a new plugin
 ----------------
 
     git submodule add git://example.com/git/plugin-name.git bundle/plugin-name
-    git submodule init
-    git submodule update
+    git submodule update --init --recursive
 
 Remove a plugin
 ---------------
@@ -77,5 +75,5 @@ Main commands and shortcuts
 Author and license
 ==================
 
-    Davide Alberani <da@erlug.linux.it> (C) 2013-2017
+    Davide Alberani <da@erlug.linux.it> (C) 2013-2018
     Released under the terms of the CC BY-SA license: https://creativecommons.org/licenses/by-sa/4.0/

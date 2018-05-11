@@ -2,7 +2,7 @@
 "
 " Davide Alberani's vimrc
 "
-" Davide Alberani <da@erlug.linux.it> (C) 2013-2016
+" Davide Alberani <da@erlug.linux.it> (C) 2013-2018
 " Released under the terms of the CC BY-SA license:
 " https://creativecommons.org/licenses/by-sa/4.0/
 "
@@ -115,38 +115,52 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:ultisnips_python_style="sphinx"
 
-" Python-mode
-let g:pymode_python = 'python3'
-let g:pymode_options = 0
-let g:pymode_rope = 0
-"let g:pymode_rope_guess_project = 0
-let g:pymode_rope_lookup_project = 0
-let g:pymode_rope_completion = 1
-let g:pymode_rope_complete_on_dot = 1
-let g:pymode_rope_autoimport = 0
-let g:pymode_lint = 0
-let g:pymode_lint_sort = ['E', 'C', 'I']
-let g:pymode_options_max_line_length = 120
+" UltiSnips integration with YouCompleteMe
+function! g:UltiSnips_Complete()
+  call UltiSnips#ExpandSnippet()
+  if g:ulti_expand_res == 0
+    if pumvisible()
+      return "\<C-n>"
+    else
+      call UltiSnips#JumpForwards()
+      if g:ulti_jump_forwards_res == 0
+        return "\<TAB>"
+      endif
+    endif
+  endif
+  return ""
+endfunction
 
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_enable_highlighting = 0
-let g:syntastic_python_checkers = ['pyflakes']
-let g:syntastic_loc_list_height = 3
+function! g:UltiSnips_Reverse()
+  call UltiSnips#JumpBackwards()
+  if g:ulti_jump_backwards_res == 0
+    return "\<C-P>"
+  endif
 
-" jedi-vim
-autocmd FileType python setlocal completeopt-=preview
+  return ""
+endfunction
+
+
+if !exists("g:UltiSnipsJumpForwardTrigger")
+  let g:UltiSnipsJumpForwardTrigger = "<tab>"
+endif
+
+if !exists("g:UltiSnipsJumpBackwardTrigger")
+  let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+endif
+
+au InsertEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger     . " <C-R>=g:UltiSnips_Complete()<cr>"
+au InsertEnter * exec "inoremap <silent> " .     g:UltiSnipsJumpBackwardTrigger . " <C-R>=g:UltiSnips_Reverse()<cr>"
 
 " Tagbar
 let g:tagbar_left=1
 let g:tagbar_autoclose = 1
+
+" ALE
+let g:ale_pattern_options = {'\.min.js$': {'ale_enabled': 0}}
+let g:ale_fixers = {'python': ['remove_trailing_lines', 'trim_whitespace', 'autopep8']}
+let g:ale_open_list = 1
+let g:ale_list_window_size = 3
 
 " Airline
 " Be sure to have your TERM environment variable set to xterm-256color
