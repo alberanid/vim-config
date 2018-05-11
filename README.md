@@ -12,6 +12,10 @@ Dependencies
 ============
 
 * **exuberant-ctags** for the tagbar
+* **flake8** and **pylint** for Python linting
+* **Go** if you plan to use --go-completer with YouCompleteMe
+* **Node.js** and **npm** if you plan to use --js-completer with YouCompleteMe
+* **JDK 8** if you plan to use --java-completer with YouCompleteMe
 
 Also notice that you probably want to setup your terminal with the solarized palette: http://ethanschoonover.com/solarized
 
