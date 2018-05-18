@@ -10,6 +10,7 @@
 
 " Main settings
 set nocompatible
+set updatetime=1000
 set encoding=utf-8
 set viminfo=!,'100,\"1000,c
 set history=1000
@@ -132,6 +133,7 @@ let g:ale_pattern_options = {'\.min.js$': {'ale_enabled': 0}}
 let g:ale_fixers = {'python': ['remove_trailing_lines', 'trim_whitespace', 'autopep8']}
 let g:ale_open_list = 1
 let g:ale_list_window_size = 3
+let g:ale_echo_cursor = 0
 
 " Airline
 " Be sure to have your TERM environment variable set to xterm-256color
