@@ -10,7 +10,7 @@
 
 " Main settings
 set nocompatible
-set updatetime=1000
+set updatetime=300
 set encoding=utf-8
 set viminfo=!,'100,\"1000,c
 set history=1000
@@ -95,6 +95,17 @@ com -bang WQ wq<bang>
 com -bang Qa qa<bang>
 com -bang QA qa<bang>
 
+"function! QuitOrLclose()
+    "if &buftype == 'quickfix'
+        "lclose
+    "else
+        "quit
+    "endif
+"endfunction
+
+"cabbrev q call QuitOrLclose()
+
+
 " Mappings
 map Q gq
 :nnoremap <silent> <F2> :YRShow<CR>
@@ -133,7 +144,8 @@ let g:ale_pattern_options = {'\.min.js$': {'ale_enabled': 0}}
 let g:ale_fixers = {'python': ['remove_trailing_lines', 'trim_whitespace', 'autopep8']}
 let g:ale_open_list = 1
 let g:ale_list_window_size = 3
-let g:ale_echo_cursor = 0
+" fix a VIM bug that prevents the cursor to being shown; for now, I've set updatetime to 300 as a workaround
+"let g:ale_echo_cursor = 0
 
 " Airline
 " Be sure to have your TERM environment variable set to xterm-256color

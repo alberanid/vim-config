@@ -98,3 +98,6 @@
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
 	ignore = dirty
+[submodule "bundle/vim-qf"]
+	path = bundle/vim-qf
+	url = https://github.com/romainl/vim-qf.git
