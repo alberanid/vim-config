@@ -11,6 +11,7 @@ Installation
 Dependencies
 ============
 
+* **cmake** to install YouCompleteMe
 * **exuberant-ctags** for the tagbar
 * **flake8** and **pylint** for Python linting
 * **eslint** for JavaScript linting (must be configured with *eslint --init*)
