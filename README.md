@@ -1,7 +1,7 @@
 Installation
 ============
 
-    git clone git://github.com/alberanid/vim-config.git ~/.vim
+    git clone https://github.com/alberanid/vim-config.git ~/.vim
     ln -s ~/.vim/vimrc ~/.vimrc
     cd ~/.vim
     git submodule update --init --recursive
@@ -28,6 +28,8 @@ Upgrade installed plugins
 -------------------------
 
     git submodule foreach git pull origin master
+    cd bundle/YouCompleteMe
+    ./install.py --clang-completer --go-completer --js-completer --java-completer
 
 Add a new plugin
 ----------------
