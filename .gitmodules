@@ -74,10 +74,6 @@
 	path = bundle/vim-togglemouse
 	url = https://github.com/nvie/vim-togglemouse.git
 	ignore = dirty
-[submodule "bundle/vim-vue"]
-	path = bundle/vim-vue
-	url = https://github.com/posva/vim-vue.git
-	ignore = dirty
 [submodule "bundle/undotree"]
 	path = bundle/undotree
 	url = https://github.com/mbbill/undotree.git
