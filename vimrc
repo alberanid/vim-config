@@ -187,9 +187,9 @@ if &t_Co > 2 || has("gui_running")
   set background=dark
   syntax on
   "let g:solarized_termcolors=256
-  colorscheme solarized
+  "colorscheme solarized
   "colorscheme koehler
-  "colorscheme dracula
+  colorscheme dracula
 endif
 
 " Autocommands
