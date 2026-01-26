@@ -27,7 +27,7 @@ Plugin management
 Upgrade installed plugins
 -------------------------
 
-    git submodule foreach git pull origin master
+    git submodule foreach 'git pull origin master || git pull origin main'
     cd bundle/YouCompleteMe
     ./install.py --clang-completer --go-completer --js-completer --java-completer
 
