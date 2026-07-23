@@ -54,7 +54,6 @@ set ruler
 set laststatus=2
 set scrolloff=1
 set showcmd
-set ttyfast
 set mouse=
 set title
 set icon
@@ -62,6 +61,9 @@ set noshowmode
 set switchbuf=usetab,newtab
 set noerrorbells
 set wildmenu
+if has('termguicolors')
+  set termguicolors
+endif
 "set cursorline
 
 " Search
@@ -71,6 +73,10 @@ set infercase
 set smartcase
 set showmatch
 set hlsearch
+if executable('rg')
+  set grepprg=rg\ --vimgrep\ --smart-case
+  set grepformat=%f:%l:%c:%m,%f:%l:%m
+endif
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
@@ -163,7 +169,7 @@ let airline#extensions#tabline#ignore_bufadd_pat = '\c\vgundo|undotree|vimfiler|
 
 " undotree
 if has("persistent_undo")
-  set undodir=~/vim/undodir/
+  set undodir=~/.vim/undodir/
   set undofile
 endif
 
@@ -179,12 +185,6 @@ let g:yankring_history_dir = '$HOME/.vim,$HOME'
 let g:EasyGrepCommand = 1
 
 " Terminals and color schemes
-if &term =~ "xterm-debian" || &term =~ "xterm-color" || &term =~ "xterm-xfree86" || &term =~ "linux"
-  set t_Co=16
-  set t_Sf=^[[3%dm
-  set t_Sb=^[[4%dm
-endif
-
 if &t_Co > 2 || has("gui_running")
   set background=dark
   syntax on
