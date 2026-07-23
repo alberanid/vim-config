@@ -2,7 +2,7 @@
 "
 " Davide Alberani's vimrc
 "
-" Davide Alberani <da@erlug.linux.it> (C) 2013-2026
+" Davide Alberani <da@mimante.net> (C) 2013-2026
 " Released under the terms of the CC BY-SA license:
 " https://creativecommons.org/licenses/by-sa/4.0/
 "

@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:	Remind
-" Maintainer:	Davide Alberani <da@erlug.linux.it>
+" Maintainer:	Davide Alberani <da@mimante.net>
 " Last Change:	02 Nov 2015
 " Version:	0.7
 " URL:		http://ismito.it/vim/syntax/remind.vim
