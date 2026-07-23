@@ -143,6 +143,8 @@ let g:tagbar_autoclose = 1
 let g:ale_pattern_options = {'\.min.js$': {'ale_enabled': 0}}
 let g:ale_fixers = {'python': ['remove_trailing_lines', 'trim_whitespace', 'autopep8']}
 let g:ale_open_list = 1
+" Avoid E565 from asynchronous list close callbacks in some plugin contexts.
+let g:ale_keep_list_window_open = 1
 let g:ale_list_window_size = 3
 " fix a VIM bug that prevents the cursor to being shown; for now, I've set updatetime to 300 as a workaround
 "let g:ale_echo_cursor = 0
