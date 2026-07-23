@@ -80,3 +80,6 @@
 [submodule "bundle/dracula-theme"]
 	path = bundle/dracula-theme
 	url = https://github.com/dracula/vim.git
+[submodule "bundle/catppuccin"]
+	path = bundle/catppuccin
+	url = https://github.com/catppuccin/vim.git

@@ -187,7 +187,11 @@ if &t_Co > 2 || has("gui_running")
   "let g:solarized_termcolors=256
   "colorscheme solarized
   "colorscheme koehler
-  colorscheme dracula
+  try
+    colorscheme catppuccin
+  catch /^Vim\%((\a\+)\)\=:E185/
+    colorscheme dracula
+  endtry
 endif
 
 " Autocommands
