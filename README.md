@@ -18,8 +18,9 @@ Dependencies
 * **Go** if you plan to use --go-completer with YouCompleteMe
 * **Node.js** and **npm** if you plan to use --js-completer with YouCompleteMe
 * **JDK 8** if you plan to use --java-completer with YouCompleteMe
+* **ripgrep** for the configured grep workflow (used by <Leader>g and <Leader>G)
 
-Also notice that you probably want to setup your terminal with the solarized palette: http://ethanschoonover.com/solarized
+For best colors in modern terminals, enable true color in your terminal profile and use a 24-bit capable theme.
 
 Plugin management
 =================
@@ -60,18 +61,18 @@ Main commands and shortcuts
 * **ctrl+x ctrl+k** complete using dictionaries
 
 **And some toggles:**
-* **F2** yank list (enter to put in place, or **p**aste commands to insert in a near line)
+* **F2** show Vim registers
 * **F4** NERDTree
 * **F5** spell checker
 * **F8** Tagbar
 * **F9** paste mode
 * **F10** Undotree
-* **F12** mouse mode
 
-**Seach and simple refactoring (EasyGrep):**
-* **\\vv** grep the word under the cursor (**\\vV** to match the whole word)
-* **\\vR** grep the whole word and prompt for a replacement
-* **\\vyr** toggle recursive search and **\\vyi** case insensitive mode
+**Search and quickfix (ripgrep + built-in :grep):**
+* **\\g** start a grep command using your configured grepprg (ripgrep)
+* **\\G** run grep without jumping to the first hit
+* **\\co** open quickfix list
+* **\\cc** close quickfix list
 
 **Commenting (NERD Commenter) and editing (surround):**
 * **\\c<space>** toggle comment of current line
@@ -83,5 +84,5 @@ Main commands and shortcuts
 Author and license
 ==================
 
-    Davide Alberani <da@erlug.linux.it> (C) 2013-2018
+    Davide Alberani <da@erlug.linux.it> (C) 2013-2026
     Released under the terms of the CC BY-SA license: https://creativecommons.org/licenses/by-sa/4.0/

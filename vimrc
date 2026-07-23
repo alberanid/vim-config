@@ -2,7 +2,7 @@
 "
 " Davide Alberani's vimrc
 "
-" Davide Alberani <da@erlug.linux.it> (C) 2013-2018
+" Davide Alberani <da@erlug.linux.it> (C) 2013-2026
 " Released under the terms of the CC BY-SA license:
 " https://creativecommons.org/licenses/by-sa/4.0/
 "
@@ -114,13 +114,17 @@ com -bang QA qa<bang>
 
 " Mappings
 map Q gq
-:nnoremap <silent> <F2> :YRShow<CR>
+nnoremap <silent> <F2> :registers<CR>
 nnoremap <silent> <F4> :execute 'NERDTreeToggle ' . getcwd()<CR>
 nnoremap <silent> <F5> :setlocal spell!<CR>
 inoremap <silent> <F5> <C-\><C-O>:setlocal spell!<CR>
 nnoremap <F8> :TagbarToggle<CR>
 set pastetoggle=<F9>
 nnoremap <silent> <F10> :UndotreeToggle<CR>
+nnoremap <silent> <leader>g :grep<Space>
+nnoremap <silent> <leader>G :grep!<Space>
+nnoremap <silent> <leader>co :copen<CR>
+nnoremap <silent> <leader>cc :cclose<CR>
 " Make p in Visual mode replace the selected text with the " register
 vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 
@@ -175,14 +179,6 @@ endif
 
 " delimitMate
 autocmd FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
-
-" yankring
-let g:yankring_max_history = 1000
-let g:yankring_min_element_length = 2
-let g:yankring_history_dir = '$HOME/.vim,$HOME'
-
-" EasyGrep
-let g:EasyGrepCommand = 1
 
 " Terminals and color schemes
 if &t_Co > 2 || has("gui_running")
